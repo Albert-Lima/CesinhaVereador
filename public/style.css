@@ -161,6 +161,7 @@ main{
     color: var(--var-Azul2);
     font-family: var(--var-FontInter);
     font-size: 20px;
+    transform: translateY(-200px);
 }
 .coligSection span{
     height: 500px;
@@ -192,12 +193,42 @@ main{
     align-items: center;
     justify-content: center;
 }
+.contentCTA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-300px, 200px);
+}
 .contentCTA h2{
     font-family: var(--var-FontInter);
     color: var(--var-Azul1);
-    font-size: 40px;
+    font-size: 50pt;
+    font-weight: 800;
+}
+.contentCTA p{
+    color: var(--var-Azul2);
+    font-family: var(--var-FontInter);
+    font-size: 18pt;
+    font-weight: 800;
+    margin-top: 30px;
+    text-align: center;
+}
+.contentCTA .number{
+    color: var(--var-Azul1);
+    font-family: var(--var-FontInter);
+    font-size: 40pt;
+    font-weight: 800;
+    background-color: white;
+    width: max-content;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    border-radius: 15px;
+    margin-top: 0px;
 }
 .contentIMGPerfil img{
     height: 55vh;
-    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, 0.288))
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, 0.288));
 }
