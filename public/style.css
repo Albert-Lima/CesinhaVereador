@@ -156,7 +156,6 @@ main{
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    margin-top: 100px;
 }
 .coligSection p{
     color: var(--var-Azul2);
@@ -166,8 +165,20 @@ main{
 .coligSection span{
     height: 500px;
     width: 500px;
-    border: 100px solid border-image;
-    border-image: linear-gradient(to right bottom, var(--var-Amarelo1), var(--var-Amarelo2), var(--var-Amarelo3));
+    background-image: linear-gradient(to right bottom, var(--var-Amarelo1), var(--var-Amarelo2), var(--var-Amarelo3));
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -100px;
+    z-index: -1;
+}
+.coligSection span div{
+    background-color: white;
+    height: 350px;
+    width: 350px;
     border-radius: 100%;
 }
 .MasterMain{
@@ -188,4 +199,5 @@ main{
 }
 .contentIMGPerfil img{
     height: 55vh;
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, 0.288))
 }
