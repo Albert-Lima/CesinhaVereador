@@ -41,6 +41,12 @@ header{
 header span img{
     height: 50px;
 }
+header div img{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100px;
+}
 footer{
     height: 30vh;
     width: 100%;
@@ -97,6 +103,9 @@ footer{
 }
 #RedirectToWpp:hover{
     animation-play-state: paused;
+}
+#RedirectToWpp img{
+    height: 50px;
 }
 @keyframes WhatsappIcon {
     0%{
@@ -190,8 +199,9 @@ main{
     border-bottom-left-radius: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
+    padding-right: 50px;
 }
 .contentCTA{
     display: flex;
@@ -228,7 +238,161 @@ main{
     border-radius: 15px;
     margin-top: 0px;
 }
+.contentIMGPerfil{
+    height: max-content;
+}
 .contentIMGPerfil img{
-    height: 55vh;
+    height: 500px;
+    transform: translateY(-80px);
     filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, 0.288));
+}
+
+@media (max-width: 1400px) {
+    .MasterMain{
+        width: 90%;
+    }
+}
+@media (max-width: 1205px) {
+    main{
+        width: 100%;
+        margin-left: 0px;
+        justify-content: end;
+    }
+    .coligSection{
+        display: none;
+    }
+    .MasterMain{
+        width: 90%;
+    }
+    #RedirectToWpp{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    .contentCTA{
+        transform: translate(-300px, 250px);
+    }
+}
+@media (max-width: 880px) {
+    .Name div h1{
+        font-size: 40pt;
+        color: white;
+        font-family: var(--var-FontInter);
+    }
+    .Name div p{
+        font-size: 15px;
+        color: #FFFFFF;
+        font-family: var(--var-FontInter);
+        font-weight: 400;
+        letter-spacing: 5px;
+        margin-left: 10px;
+    }
+    .Name span img{
+        height: 40pt;
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 650px) {
+    .contentIMGPerfil img{
+        height: 400px;
+        transform: translateY(-100px);
+    }
+    .Name div h1{
+        font-size: 30pt;
+        color: white;
+        font-family: var(--var-FontInter);
+    }
+    .Name div p{
+        font-size: 15px;
+        color: #FFFFFF;
+        font-family: var(--var-FontInter);
+        font-weight: 400;
+        letter-spacing: 5px;
+        margin-left: 10px;
+    }
+    .Name span img{
+        height: 30pt;
+        margin-bottom: 0px;
+    }
+    .contentCTA{
+        transform: translate(-200px, 50px);
+    }
+    .contentCTA h2{
+        font-family: var(--var-FontInter);
+        color: var(--var-Azul1);
+        font-size: 30pt;
+        font-weight: 800;
+    }
+    .contentCTA p{
+        color: var(--var-Azul2);
+        font-family: var(--var-FontInter);
+        font-size: 15pt;
+        font-weight: 800;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .contentCTA .number{
+        color: var(--var-Azul1);
+        font-family: var(--var-FontInter);
+        font-size: 30pt;
+        font-weight: 800;
+        background-color: white;
+        width: max-content;
+    }
+}
+@media (max-width: 490px) {
+    .Name div h1{
+        font-size: 20pt;
+        color: white;
+        font-family: var(--var-FontInter);
+    }
+    .Name div p{
+        font-size: 15px;
+        color: #FFFFFF;
+        font-family: var(--var-FontInter);
+        font-weight: 400;
+        letter-spacing: 5px;
+        margin-left: 10px;
+    }
+    .Name span img{
+        height: 20pt;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 480px) {
+    .MasterMain{
+        padding-right: 0px;
+        width: 100%;
+    }
+    .contentIMGPerfil img{
+        height: 300px;
+    }
+    
+}
+@media (max-width: 420px){
+    .contentCTA{
+        transform: translate(-150px, 50px);
+    }
+    .contentCTA h2{
+        font-family: var(--var-FontInter);
+        color: var(--var-Azul1);
+        font-size: 25pt;
+        font-weight: 800;
+    }
+    .contentCTA p{
+        color: var(--var-Azul2);
+        font-family: var(--var-FontInter);
+        font-size: 12pt;
+        font-weight: 800;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .contentCTA .number{
+        color: var(--var-Azul1);
+        font-family: var(--var-FontInter);
+        font-size: 25pt;
+        font-weight: 800;
+        background-color: white;
+        width: max-content;
+    }
 }
