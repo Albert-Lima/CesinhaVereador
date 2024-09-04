@@ -1,0 +1,191 @@
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+/*Font's Inter e Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --var-Azul1: #005AAB;
+    --var-Azul2: #002445;
+    --var-Azul3: #004481;
+    --var-Azul4: #002E57;
+    --var-Azul5: #00417C;
+
+    --var-Amarelo1: #FED507;
+    --var-Amarelo2: #C3A300;
+    --var-Amarelo3: #CAA904;
+    --var-Amarelo4: #C3A300;
+
+    --var-FontInter: "Inter", system-ui;
+    --var-FontOpenSans: "Open Sans", system-ui;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+header{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    top: 0px;
+    left: 10%;
+}
+header span img{
+    height: 50px;
+}
+footer{
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient( to right bottom, var(--var-Azul1) 10%, var(--var-Azul2) 80%);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Name{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+}
+.Name div{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.Name div h1{
+    font-size: 60pt;
+    color: white;
+    font-family: var(--var-FontInter);
+}
+.Name div p{
+    font-size: 15px;
+    color: #FFFFFF;
+    font-family: var(--var-FontInter);
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-left: 10px;
+}
+.Name span img{
+    height: 50pt;
+    margin-bottom: 10px;
+}
+#RedirectToWpp{
+    background: none;
+    outline: none;
+    border: none;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    animation-name: WhatsappIcon;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    z-index: 1001;
+}
+#RedirectToWpp:hover{
+    animation-play-state: paused;
+}
+@keyframes WhatsappIcon {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    80%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.cnpj{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    font-family: var(--var-FontInter);
+}
+.decFooterOne{
+    height: 1500px;
+    width: 1700px;
+    background-image: linear-gradient(to right bottom, var(--var-Azul4) 1%, var(--var-Azul5) 50%);
+    border-radius: 100%;
+    position: absolute;
+    top: 74vh;
+    right: -500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.decFooterOne div{
+    height: 1380px;
+    width: 1580px;
+    border-radius: 100%;
+    background-color: var(--var-Azul3);
+}
+
+/*estilizção das informações centrais*/
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 10%;
+}
+.coligSection{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.coligSection p{
+    color: var(--var-Azul2);
+    font-family: var(--var-FontInter);
+    font-size: 20px;
+}
+.coligSection span{
+    height: 500px;
+    width: 500px;
+    border: 100px solid border-image;
+    border-image: linear-gradient(to right bottom, var(--var-Amarelo1), var(--var-Amarelo2), var(--var-Amarelo3));
+    border-radius: 100%;
+}
+.MasterMain{
+    height: 85vh;
+    width: 70%;
+    background-image: linear-gradient(to right, var(--var-Amarelo1) 50%, var(--var-Amarelo2));
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contentCTA h2{
+    font-family: var(--var-FontInter);
+    color: var(--var-Azul1);
+    font-size: 40px;
+}
+.contentIMGPerfil img{
+    height: 55vh;
+}
