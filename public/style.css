@@ -169,8 +169,10 @@ main{
 .coligSection p{
     color: var(--var-Azul2);
     font-family: var(--var-FontInter);
+    font-weight: 800;
     font-size: 20px;
     transform: translateY(-200px);
+    width: 300px;
 }
 .coligSection span{
     height: 500px;
@@ -247,6 +249,32 @@ main{
     filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, 0.288));
 }
 
+
+@media (max-height: 730px){
+    .coligSection{
+        transform: translateY(100px)
+    }
+    .contentIMGPerfil img{
+        height: 400px;
+        transform: translateY(-30px);
+    }
+}
+@media (max-height: 570px) {
+    .contentIMGPerfil img{
+        height: 300px;
+    }
+}
+@media (max-height: 500px) {
+    body{
+        height: 150vh;
+    }
+    .coligSection{
+        transform: translateY(180px)
+    }
+}
+
+
+
 @media (max-width: 1400px) {
     .MasterMain{
         width: 90%;
@@ -269,9 +297,6 @@ main{
         right: 20px;
         bottom: 20px;
     }
-    .contentCTA{
-        transform: translate(-300px, 250px);
-    }
 }
 @media (max-width: 880px) {
     .Name div h1{
@@ -292,10 +317,16 @@ main{
         margin-bottom: 5px;
     }
 }
+@media (max-width: 730px) {
+    .contentIMGPerfil img{
+        height: 400px;
+        transform: translateY(-80px);
+    }
+}
 @media (max-width: 650px) {
     .contentIMGPerfil img{
         height: 400px;
-        transform: translateY(-100px);
+        transform: translateY(-80px);
     }
     .Name div h1{
         font-size: 30pt;
@@ -315,7 +346,7 @@ main{
         margin-bottom: 0px;
     }
     .contentCTA{
-        transform: translate(-200px, 50px);
+        transform: translate(-280px, 100px);
     }
     .contentCTA h2{
         font-family: var(--var-FontInter);
@@ -339,6 +370,10 @@ main{
         background-color: white;
         width: max-content;
     }
+    .MasterMain{
+        width: 100%;
+        padding-right: 0px;
+    }
 }
 @media (max-width: 490px) {
     .Name div h1{
@@ -358,12 +393,12 @@ main{
         height: 20pt;
         margin-bottom: 0px;
     }
+    .contentCTA{
+        transform: translate(-180px, 100px);
+    }
 }
 @media (max-width: 480px) {
-    .MasterMain{
-        padding-right: 0px;
-        width: 100%;
-    }
+
     .contentIMGPerfil img{
         height: 300px;
     }
